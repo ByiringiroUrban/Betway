@@ -1,0 +1,126 @@
+/* Promo Section Styling */
+.promo-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5f5f5, #ffffff);
+  color: #000;
+  margin-top: 10px; /* Adjust for Navbar spacing */
+  overflow: hidden;
+  position: relative;
+}
+
+.promo-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Text Section */
+.promo-text {
+  max-width: 50%;
+  animation: fadeIn 1s ease-in-out; /* Animation added */
+}
+
+.promo-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.promo-text h1 span {
+  color: #0073e6;
+}
+
+.promo-description {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.promo-description a {
+  color: #0073e6;
+  text-decoration: underline;
+}
+
+.promo-button {
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.promo-button:hover {
+  background-color: #005bb5;
+  transform: scale(1.1);
+}
+
+/* Image Section */
+.promo-image {
+  max-width: 40%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.promo-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .promo-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .promo-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo-text {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .promo-image {
+    max-width: 100%;
+  }
+
+  .promo-image img {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .promo-description {
+    font-size: 1rem;
+  }
+
+  .promo-button {
+    font-size: 1rem;
+  }
+}
